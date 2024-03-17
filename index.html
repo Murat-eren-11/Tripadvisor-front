@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripAdvisor</title>
+    <link rel="icon" href=
+"./assets/img/Tripadvisor_logoset_solid_green.svg"
+          type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script
+      src="https://kit.fontawesome.com/1b5849fe4b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="./script/modal.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo-link">
+          <img
+            src="./assets/img/Tripadvisor_logo.svg"
+            alt="Logo TripAdvisor"
+            class="logo"
+          />
+        </a>
+        <nav class="hnav">
+          <div>
+            <a href="#"><i class="fa-solid fa-pen"></i> <span>Avis</span></a>
+          </div>
+          <div>
+            <a href="#"
+              ><i class="fa-regular fa-heart"></i> <span>Voyages</span></a
+            >
+          </div>
+          <div>
+            <a href="#"
+              ><i class="fa-regular fa-bell"></i> <span>Alertes</span></a
+            >
+          </div>
+
+          <a href="#"><button class="connexion">Connectez-Vous</button></a>
+
+          <div>
+            <a href="#"
+              ><i class="fa-solid fa-shopping-cart"></i> <span>Panier</span></a
+            >
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="#main">
+      <div class="container">
+        <h1><span>Explorez</span> Izmir</h1>
+        <p class="subtitle">
+          Plateforme culturelle où se rencontrent mosquées élégantes, bazars traditionnels, boulevards bordés de palmiers et ruines antiques grecques, Izmir a beaucoup à offrir aux visiteurs qui font une halte dans leur croisière à destination d'Éphèse. <a href="#">en savoir plus</a>.
+        </p>
+        <div class="navigation">
+          <div><span>Hotels</span><i class="fa-solid fa-bed"></i></div>
+          <div>
+            <span>Location de vacances</span><i class="fa-solid fa-house"></i>
+          </div>
+          <div>
+            <span>Activités</span><i class="fa-solid fa-ticket-simple"></i>
+          </div>
+          <div>
+            <span>Restaurants</span><i class="fa-solid fa-utensils"></i>
+          </div>
+          <div>
+            <span>Forums de voyage</span><i class="fa-regular fa-message"></i>
+          </div>
+          <div><span>Plus</span><i class="fa-solid fa-ellipsis"></i></div>
+        </div>
+        <div class="pictures">
+          <div class="col1">
+            <img src="./assets/img/izmir1.jpeg" alt="" />
+            <div>
+              <i class="fa-regular fa-image"></i>
+              <span>Toutes les photos</span>
+            </div>
+          </div>
+          <div class="col2">
+            <img src="./assets/img/izmir_turquie.jpg.webp" alt="" />
+            <img src="./assets/img/izmir-language-stay-2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="menu"></div>
+        <div class="description">
+          <div class="col1">
+            <h2>Izmir</h2>
+            <p>
+              Plateforme culturelle où se rencontrent mosquées élégantes, bazars traditionnels, boulevards bordés de palmiers et ruines antiques grecques, Izmir a beaucoup à offrir aux visiteurs qui font une halte dans leur croisière à destination d'Éphèse.
+            </p>
+          </div>
+          <div class="col2">
+            <div>
+              <h3>Paris : commencez à organiser !</h3>
+              <p>
+                Créez un voyage pour enregistrer et organiser toutes vos idées
+                et les visualiser sur une carte.
+              </p>
+              <button>Créez un voyage</button>
+            </div>
+            <div>
+              <img src="./assets/img/maps_cnuhsr.png" alt="" class="map" />
+            </div>
+          </div>
+        </div>
+        <section class="section1">
+          <h2>Paris : les immanquables</h2>
+          <div>
+            <div class="col1">
+              <h4>Se divertir</h4>
+              <p>
+                Des lieux à voir, des rues à explorer et des expériences
+                emblématiques à Izmir
+              </p>
+              <a href="#">Tout afficher</a>
+            </div>
+            <div class="col2">
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/kemeralti-carsisi-nda.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Kemeralti Market</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Quartiers
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/saat-kulesi.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Saat Kulesi (Tour de l'horloge)</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Monuments & Points d'intérêt
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/alsancak.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Alsancak</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Autre
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="col1">
+              <h4>Se restaurer</h4>
+              <p>Bistrots et bars ptypiques, et plus encore à Paris.</p>
+              <a href="#">Tout afficher</a>
+            </div>
+            <div class="col2">
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/1-sk-no-34c-mansuroglu.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Üstat Kebab</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  €€-€€€ • Turque, Barbecue/Grillades, Saine
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/gozlemenin-ilk-adresi.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Gozlemecim</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  € • Turque, Saine, Végétariens bienvenu
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/photo2jpg.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Reyhan Pastanesi</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  €€-€€€ • Desserts, Café, Végétariens bienvenus
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+              <div class="carrouselcol">
+                <div>
+                  <img src="./assets/img/eiffeltoren.jpg" alt="" />
+                  <div class="circle"><i class="fa-regular fa-heart"></i></div>
+                  <div class="owl">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>2022</span>
+                  </div>
+                </div>
+                <h5>Tour Effeil</h5>
+                <div class="rating">
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+                  <span>139 901</span>
+                </div>
+                <p>
+                  Tours et plateformes d'observation, Monuments & Points
+                  d'intérêt
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section2">
+          <h2>Guide du voyageurs</h2>
+          <div class="carrousel">
+            <div class="col">
+              <img src="./assets/img/efes.jpg" alt="" />
+              <h5>Visite d'Éphèse avec le temple d'Artémis et le village de Sirince au départ d'Izmir</h5>
+              <p>Visite</p>
+              <div>
+                <img src="./assets/img/moi.jpg" alt="" />
+                <span>Par</span>
+                <span>Eatwith</span>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./assets/img/maria.jpg" alt="">
+              <h5>Pamukkale tour de Izmir</h5>
+              <p>Baignade & visite</p>
+              <div>
+                <img src="./assets/img/moi.jpg" alt="">
+                <span>Par</span>
+                <span>Murat</span>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./assets/img/pamukkale.jpg" alt="">
+              <h5>Ephese tour avec la Maison de la Sainte-Vierge</h5>
+              <p>Visite</p>
+              <div>
+                <img src="./assets/img/moi.jpg" alt="">
+                <span>Par</span>
+                <span>Murat</span>
+              </div>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <img src="./assets/img/forks-icon.jpg" alt="">
+      <p>Made at
+      <a href="https://www.lereacteur.io/?utm_source=google&utm_medium=cpc&utm_campaign=FR-SN-Brand&utm_term=le%20reacteur&utm_content=377851505166&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhO7BuJv2rT3XUo0ieGu_AsRtTEPZRkWIOPq08p6yyh0O2X46EpfwncaAnYYEALw_wcB" target="_blank">Le Reacteur</a>
+      By
+      <a href="https://github.com/Murat-eren-11/" target="_blank">Murat</a>
+      </p>
+    </footer>
+    <div class="modal hidden" id="modal">
+        <div class="form-container">
+          <div>
+            <i class="fa-solid fa-xmark" id="cross"></i>
+            <p>Formulaire de contact</p>
+  
+            <form id="contact-form">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="Prénom"
+                autocomplete="off"
+              />
+  
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Nom"
+              />
+  
+              <input type="email" name="email" id="email" placeholder="Email" />
+  
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                cols="50"
+                placeholder="Écrivez ici votre message..."
+              ></textarea>
+  
+              <input
+                type="submit"
+                value="Envoyer le formulaire"
+                id="submit-btn"
+              />
+              <p id="succes" class="hidden" style="color: green">MESSAGE ENVOYE</p>
+
+            </form>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
