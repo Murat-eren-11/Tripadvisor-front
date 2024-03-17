@@ -27,7 +27,10 @@ $.addEventListener("DOMContentLoaded", () => {
       message: document.querySelector("#message").value,
     };
     console.log(data);
-    const response = await axios.post("http://localhost:3000/form", data);
+    const response = await axios.post(
+      "https://site--tripadvisorback--8qjfp8mgzlx5.code.run/form",
+      data
+    );
     console.log(response.data.status);
 
     if (response.data.status === 200) {
